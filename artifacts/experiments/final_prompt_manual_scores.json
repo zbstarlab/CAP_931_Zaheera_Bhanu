@@ -1,0 +1,115 @@
+{
+  "schema_version": "2.0",
+  "reviewed_at": "2026-10-26T22:26:00Z",
+  "reviewer": "manual source-excerpt review",
+  "scoring_note": "Each 1-5 score was assigned after comparing the final validated output with the exact frozen excerpts. Exact excerpt matching was not treated as proof of semantic support.",
+  "rubric": {
+    "factual_accuracy": "5 means every fact is supported or the approach correctly abstains.",
+    "evidence_support": "5 means each cited excerpt directly supports the complete attached claim.",
+    "product_relevance": "5 means relevance is specific, cautious, and useful for the stated product and buyer.",
+    "completeness": "5 means facts, relevance, discovery questions, and evidence gaps are all handled well.",
+    "sales_usefulness": "5 means the result is highly practical for an initial customer conversation.",
+    "format_adherence": "5 means the response follows its requested structure without repair.",
+    "unsupported_assumptions": "5 means no unstated need, intent, relationship, responsibility, or priority is introduced."
+  },
+  "scores": [
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "approach": "specialized_v3",
+      "attempt": 2,
+      "prompt_version": "specialized-v3.1",
+      "factual_accuracy": 5,
+      "evidence_support": 5,
+      "product_relevance": 2,
+      "completeness": 3,
+      "sales_usefulness": 3,
+      "format_adherence": 4,
+      "unsupported_assumptions": 3,
+      "average": 3.57,
+      "unsupported_claims": [],
+      "notes": [
+        "The two retained facts were supported by S2 and S3.",
+        "The competitor role correctly abstained after the deterministic evidence gate.",
+        "Possible relevance statements inferred strategic focus or executive influence and were too generic.",
+        "The leadership response included an empty gap string, which reduced format adherence.",
+        "This prompt did not generate meeting questions; the production application adds them deterministically after validation."
+      ]
+    },
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "approach": "grounded_sales",
+      "attempt": 2,
+      "prompt_version": "grounded-sales-v1.1",
+      "factual_accuracy": 3,
+      "evidence_support": 3,
+      "product_relevance": 3,
+      "completeness": 4,
+      "sales_usefulness": 3,
+      "format_adherence": 5,
+      "unsupported_assumptions": 3,
+      "average": 3.43,
+      "unsupported_claims": [
+        "A leadership-role result described IBM's DARPA selection rather than a named leader.",
+        "The IBM portfolio claim named Confluent even though its attached excerpt only named watsonx Orchestrate."
+      ],
+      "notes": [
+        "The company-role fact with an invalid stitched excerpt was automatically omitted.",
+        "All four retained excerpts occurred in their cited source text, but exact occurrence did not guarantee that each excerpt supported the complete claim.",
+        "The separated response structure produced six suggested questions across the company and leadership roles.",
+        "Several relevance suggestions were generic or not clearly tied to the seller's value proposition."
+      ]
+    },
+    {
+      "case_id": "oracle_blocked_prospect",
+      "approach": "specialized_v3",
+      "attempt": 1,
+      "prompt_version": "specialized-v3.0",
+      "factual_accuracy": 5,
+      "evidence_support": 5,
+      "product_relevance": 2,
+      "completeness": 3,
+      "sales_usefulness": 2,
+      "format_adherence": 5,
+      "unsupported_assumptions": 5,
+      "average": 3.86,
+      "unsupported_claims": [],
+      "notes": [
+        "No sources were available, no API calls were made, and all roles reported evidence gaps."
+      ]
+    },
+    {
+      "case_id": "oracle_blocked_prospect",
+      "approach": "grounded_sales",
+      "attempt": 1,
+      "prompt_version": "grounded-sales-v1.0",
+      "factual_accuracy": 5,
+      "evidence_support": 5,
+      "product_relevance": 2,
+      "completeness": 3,
+      "sales_usefulness": 2,
+      "format_adherence": 5,
+      "unsupported_assumptions": 5,
+      "average": 3.86,
+      "unsupported_claims": [],
+      "notes": [
+        "No sources were available, no API calls were made, and all roles reported evidence gaps."
+      ]
+    }
+  ],
+  "unscored_events": [
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "approach": "specialized_v3",
+      "attempt": 1,
+      "prompt_version": "specialized-v3.0",
+      "reason": "The leadership response returned gap objects instead of strings, so strict validation rejected the approach output."
+    },
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "approach": "grounded_sales",
+      "attempt": 1,
+      "prompt_version": "grounded-sales-v1.0",
+      "reason": "The response returned question and gap objects and stitched excerpts with ellipses, so strict validation rejected it."
+    }
+  ]
+}

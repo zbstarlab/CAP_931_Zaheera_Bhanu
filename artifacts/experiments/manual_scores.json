@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "reviewed_at": "2026-10-26",
+  "reviewer": "manual source-excerpt review",
+  "scoring_note": "Scores compare each final validated output with the exact frozen excerpts. Citation-ID validity was scored mechanically elsewhere and was not treated as proof of entailment.",
+  "scores": [
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "approach": "baseline",
+      "reviewer": "manual source-excerpt review",
+      "attempt": 2,
+      "prompt_version": "baseline-v1.1",
+      "factual_accuracy": 3,
+      "source_support": 3,
+      "product_relevance": 2,
+      "category_coverage": 4,
+      "sales_usefulness": 3,
+      "average": 3.0,
+      "unsupported_claims": [
+        "The S3 excerpt identifies Matt Hicks as Red Hat CEO but does not state in the excerpt that Red Hat is an IBM subsidiary.",
+        "Several leadership relevance statements infer strategic responsibilities or influence from titles rather than directly quoted evidence."
+      ],
+      "notes": [
+        "Quantum and IBM product claims were supported, but only loosely relevant to the proposed sales-intelligence product.",
+        "The Oracle category correctly reported missing competitor evidence."
+      ]
+    },
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "approach": "specialized",
+      "reviewer": "manual source-excerpt review",
+      "attempt": 1,
+      "prompt_version": "specialized-v2.1",
+      "factual_accuracy": 5,
+      "source_support": 5,
+      "product_relevance": 3,
+      "category_coverage": 4,
+      "sales_usefulness": 4,
+      "average": 4.2,
+      "unsupported_claims": [],
+      "notes": [
+        "Both leadership claims were directly supported by S2 or S3.",
+        "The approach was conservative: it returned explicit gaps rather than stretching quantum or homepage marketing into sales strategy.",
+        "Leadership relevance labels were accurate but terse."
+      ]
+    },
+    {
+      "case_id": "oracle_blocked_prospect",
+      "approach": "baseline",
+      "reviewer": "manual source-excerpt review",
+      "attempt": 1,
+      "prompt_version": "baseline-v1.0",
+      "factual_accuracy": 5,
+      "source_support": 5,
+      "product_relevance": 2,
+      "category_coverage": 4,
+      "sales_usefulness": 2,
+      "average": 3.6,
+      "unsupported_claims": [],
+      "notes": [
+        "No model call was made and all three categories correctly reported that no public sources were retrieved.",
+        "The response was safe but could not provide actionable research."
+      ]
+    },
+    {
+      "case_id": "oracle_blocked_prospect",
+      "approach": "specialized",
+      "reviewer": "manual source-excerpt review",
+      "attempt": 1,
+      "prompt_version": "specialized-v2.1",
+      "factual_accuracy": 5,
+      "source_support": 5,
+      "product_relevance": 2,
+      "category_coverage": 5,
+      "sales_usefulness": 2,
+      "average": 3.8,
+      "unsupported_claims": [],
+      "notes": [
+        "No model call was made; role-specific gaps distinguished missing prospect evidence from missing general website evidence.",
+        "The response was safe but could not provide actionable research."
+      ]
+    }
+  ],
+  "unscored_events": [
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "approach": "baseline",
+      "attempt": 1,
+      "prompt_version": "baseline-v1.0",
+      "reason": "The model nested competitor and leadership objects inside company, so the strict schema rejected the output. The raw response and measurements remain in model_runs.json."
+    }
+  ]
+}

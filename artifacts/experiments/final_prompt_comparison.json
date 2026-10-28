@@ -1,0 +1,915 @@
+{
+  "schema_version": "2.0",
+  "created_at": "2026-10-26T22:23:29.418657+00:00",
+  "cases": [
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "description": "Accessible IBM prospect evidence with Oracle supplied as a competitor; Oracle previously returned an access block.",
+      "source_snapshot_sha256": "98fa3de1a63623027a94a3936dd0b235369c2de2b9ce31609dbbc6422053624c",
+      "request": {
+        "product_name": "Sales Intelligence Platform",
+        "company_url": "https://www.ibm.com",
+        "product_category": "AI Sales Research",
+        "competitor_urls": [
+          "https://www.oracle.com"
+        ],
+        "value_proposition": "Source-grounded account research that reduces manual preparation time.",
+        "target_customer": "Chief Revenue Officer"
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "retrieval_warnings": [
+        "Could not retrieve https://www.oracle.com: 403 Client Error: Forbidden for url: https://www.oracle.com/"
+      ],
+      "approaches": [
+        {
+          "approach": "specialized_v3",
+          "attempt": 1,
+          "prompt_version": "specialized-v3.0",
+          "prompt_sha256": "75822f753ce2d200d80b65255fed0c3e6b50b0e1116aeb06f74aef4ef7432820",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1200,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [
+            "S2",
+            "S1",
+            "S3"
+          ],
+          "raw_model_outputs": [
+            {
+              "findings": [
+                {
+                  "claim": "IBM has been selected for Stage C of DARPA’s Quantum Benchmarking Initiative.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative"
+                    }
+                  ],
+                  "relevance": "Potential interest in advanced quantum computing capabilities that could influence future sales of AI‑enabled research tools."
+                },
+                {
+                  "claim": "IBM is advancing a fault‑tolerant quantum computer expected by 2029.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "IBM expects to deliver the first fault‑tolerant system in 2029"
+                    }
+                  ],
+                  "relevance": "Shows a long‑term commitment to quantum technology, possibly affecting future procurement of AI research platforms."
+                },
+                {
+                  "claim": "IBM highlights quantum computing’s provable advantages over AI models on specific computational tasks.",
+                  "source_ids": [
+                    "S1"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S1",
+                      "excerpt": "Learn how quantum computing demonstrates provable advantages over AI models on specific computational tasks"
+                    }
+                  ],
+                  "relevance": "Indicates IBM’s focus on quantum‑AI synergy, which may align with a sales intelligence platform that leverages AI."
+                },
+                {
+                  "claim": "IBM promotes IBM watsonx Orchestrate as a tool that cuts HR costs by 40% and resolves 94% of employee requests automatically.",
+                  "source_ids": [
+                    "S1"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S1",
+                      "excerpt": "IBM watsonx Orchestrate powers AI agents that cut HR costs by 40% and resolve 94% of employee requests automatically"
+                    }
+                  ],
+                  "relevance": "Shows IBM’s interest in AI automation, potentially relevant to sales intelligence solutions."
+                }
+              ],
+              "gaps": [
+                "Insufficient evidence of IBM’s current purchasing plans for sales intelligence platforms.",
+                "No disclosed strategic initiatives directly related to account research or sales enablement.",
+                "No information on IBM’s Chief Revenue Officer’s priorities or budget allocations.",
+                "No public statements about IBM’s need for reducing manual preparation time in sales research.",
+                "No data indicating IBM’s evaluation criteria for AI sales research tools."
+              ]
+            },
+            {
+              "findings": [
+                {
+                  "claim": "IBM’s current Chairman, President and CEO is Arvind Krishna.",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S3",
+                      "excerpt": "Arvind Krishna\nChairman, President and Chief Executive Officer, IBM"
+                    }
+                  ],
+                  "relevance": "Potential interest in leadership alignment for sales outreach."
+                },
+                {
+                  "claim": "IBM has advanced to Stage C of DARPA’s Quantum Benchmarking Initiative.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative"
+                    }
+                  ],
+                  "relevance": "Demonstrates IBM’s focus on cutting‑edge technology, which may influence procurement decisions."
+                }
+              ],
+              "gaps": [
+                "Product_document is null, so no evidence of specific product features or pricing.",
+                "No explicit mention of the prospect’s current sales challenges or purchasing plans.",
+                "No evidence of the prospect’s budget or decision‑making authority beyond leadership titles.",
+                "No data on the prospect’s existing technology stack or integration needs."
+              ]
+            },
+            {
+              "findings": [
+                {
+                  "claim": "Arvind Krishna is Chairman, President and Chief Executive Officer of IBM",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S3",
+                      "excerpt": "Arvind Krishna Chairman, President and Chief Executive Officer, IBM"
+                    }
+                  ],
+                  "relevance": "Potentially relevant to a Chief Revenue Officer as the CEO’s strategic priorities may influence sales initiatives."
+                },
+                {
+                  "claim": "Jay M. Gambetta is Director of IBM Research and IBM Fellow",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "Jay Gambetta, Director of IBM Research and IBM Fellow"
+                    }
+                  ],
+                  "relevance": "Research leadership may indicate IBM’s focus on advanced technologies that could impact sales intelligence solutions."
+                },
+                {
+                  "claim": "IBM has a Senior Vice President, Chief Global Affairs Officer named Jonathan H. Adashek",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S3",
+                      "excerpt": "Jonathan H. Adashek Senior Vice President and Chief Global Affairs Officer"
+                    }
+                  ],
+                  "relevance": "Global affairs leadership could affect IBM’s international sales strategy."
+                },
+                {
+                  "claim": "IBM offers IBM watsonx Orchestrate that claims to cut HR costs by 40% and resolve 94% of employee requests automatically",
+                  "source_ids": [
+                    "S1"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S1",
+                      "excerpt": "IBM watsonx Orchestrate powers AI agents that cut HR costs by 40% and resolve 94% of employee requests automatically"
+                    }
+                  ],
+                  "relevance": "Demonstrates IBM’s AI capabilities that may be leveraged in a sales intelligence platform."
+                }
+              ],
+              "gaps": [
+                {
+                  "gap": "No explicit statement about the Sales Intelligence Platform’s features or target market."
+                },
+                {
+                  "gap": "No evidence linking the product to a Chief Revenue Officer’s responsibilities."
+                },
+                {
+                  "gap": "No data on IBM’s current sales intelligence offerings or pricing."
+                },
+                {
+                  "gap": "No information on competitor offerings beyond the URL."
+                },
+                {
+                  "gap": "No public statements about IBM’s strategic priorities related to sales intelligence."
+                }
+              ]
+            }
+          ],
+          "output": {},
+          "api_latency_seconds": 2.98206,
+          "wall_time_seconds": 40.934463,
+          "usage": {
+            "prompt_tokens": 4578,
+            "completion_tokens": 1284,
+            "total_tokens": 5862
+          },
+          "mechanical": {
+            "schema_compliant": false,
+            "finding_count": 0,
+            "citation_reference_count": 0,
+            "valid_citation_reference_count": 0,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 0,
+            "categories_with_explicit_gaps": 0,
+            "category_response_rate": 0.0,
+            "evidence_excerpt_count": 0,
+            "valid_evidence_excerpt_count": 0,
+            "evidence_excerpt_validity_rate": 1.0,
+            "findings_missing_evidence": 0,
+            "suggested_question_count": 0
+          },
+          "errors": [
+            "leadership agent produced an invalid response."
+          ],
+          "rate_limit_events": []
+        },
+        {
+          "approach": "grounded_sales",
+          "attempt": 1,
+          "prompt_version": "grounded-sales-v1.0",
+          "prompt_sha256": "9065547eb4c8fedf6eb5bd48bd8cac94cb7eb6a15c174d876ae0e5022e9bf476",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1200,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [
+            "S2",
+            "S1",
+            "S3"
+          ],
+          "raw_model_outputs": [
+            {
+              "verified_facts": [
+                {
+                  "fact_id": "F1",
+                  "claim": "IBM has been selected for Stage C of DARPA's Quantum Benchmarking Initiative.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative…IBM moves to third phase of DARPA's rigorous evaluation…\"IBM has been selected for Stage C, the third phase of the Quantum Benchmarking Initiative (QBI) led by DARPA…"
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F2",
+                  "claim": "IBM expects to deliver the first fault‑tolerant quantum system in 2029.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "\"IBM expects to deliver the first fault‑tolerant system in 2029…\""
+                    }
+                  ]
+                }
+              ],
+              "possible_sales_relevance": [
+                {
+                  "fact_id": "F1",
+                  "suggestion": "Highlight IBM’s advanced quantum research capabilities as a differentiator for clients exploring cutting‑edge technology solutions."
+                },
+                {
+                  "fact_id": "F2",
+                  "suggestion": "Emphasize IBM’s long‑term roadmap for quantum computing to align with clients’ future‑proofing strategies."
+                }
+              ],
+              "suggested_discovery_questions": [
+                {
+                  "question": "How important is quantum computing capability to your organization’s technology roadmap?"
+                },
+                {
+                  "question": "What challenges do you face in adopting emerging technologies like quantum computing?"
+                },
+                {
+                  "question": "Would you be interested in learning how IBM’s quantum initiatives could support your business objectives?"
+                }
+              ],
+              "missing_evidence": [
+                {
+                  "gap": "No source confirming IBM’s specific quantum hardware milestones beyond the 2029 target."
+                },
+                {
+                  "gap": "No source detailing the impact of IBM’s quantum progress on commercial applications."
+                },
+                {
+                  "gap": "No source indicating IBM’s engagement with other industry partners in quantum research."
+                },
+                {
+                  "gap": "No source providing context on how IBM’s quantum initiatives compare to competitors."
+                },
+                {
+                  "gap": "No source describing the benefits of IBM’s quantum research for specific customer use cases."
+                }
+              ]
+            }
+          ],
+          "output": {},
+          "api_latency_seconds": 0.842498,
+          "wall_time_seconds": 19.938127,
+          "usage": {
+            "prompt_tokens": 1253,
+            "completion_tokens": 446,
+            "total_tokens": 1699
+          },
+          "mechanical": {
+            "schema_compliant": false,
+            "finding_count": 0,
+            "citation_reference_count": 0,
+            "valid_citation_reference_count": 0,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 0,
+            "categories_with_explicit_gaps": 0,
+            "category_response_rate": 0.0,
+            "evidence_excerpt_count": 0,
+            "valid_evidence_excerpt_count": 0,
+            "evidence_excerpt_validity_rate": 1.0,
+            "findings_missing_evidence": 0,
+            "suggested_question_count": 0
+          },
+          "errors": [
+            "company grounded-sales prompt produced an invalid response."
+          ],
+          "rate_limit_events": []
+        },
+        {
+          "approach": "specialized_v3",
+          "attempt": 2,
+          "prompt_version": "specialized-v3.1",
+          "prompt_sha256": "163d4842518b0e7aad6ca8119fd6058b66de3710bd05dd3ee414c8a75e0a43f1",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1200,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [
+            "S2",
+            "S1",
+            "S3"
+          ],
+          "raw_model_outputs": [
+            {
+              "findings": [
+                {
+                  "claim": "IBM has been selected for Stage C of DARPA's Quantum Benchmarking Initiative.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative"
+                    }
+                  ],
+                  "relevance": "IBM’s involvement in DARPA’s quantum program may indicate a strategic focus on advanced computing capabilities, which could align with a sales intelligence platform that supports high‑value research and development initiatives."
+                }
+              ],
+              "gaps": [
+                "No disclosed prospect strategy or business priorities related to sales intelligence or AI research beyond the DARPA quantum initiative."
+              ]
+            },
+            {
+              "findings": [
+                {
+                  "claim": "Arvind Krishna is Chairman, President and Chief Executive Officer of IBM",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S3",
+                      "excerpt": "Arvind Krishna Chairman, President and Chief Executive Officer, IBM"
+                    }
+                  ],
+                  "relevance": "Potentially relevant to a Chief Revenue Officer seeking executive-level contacts for strategic partnership discussions"
+                }
+              ],
+              "gaps": [
+                ""
+              ]
+            }
+          ],
+          "output": {
+            "company": {
+              "agent": "company",
+              "findings": [
+                {
+                  "claim": "IBM has been selected for Stage C of DARPA's Quantum Benchmarking Initiative.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative"
+                    }
+                  ],
+                  "relevance": "IBM’s involvement in DARPA’s quantum program may indicate a strategic focus on advanced computing capabilities, which could align with a sales intelligence platform that supports high‑value research and development initiatives."
+                }
+              ],
+              "gaps": [
+                "No disclosed prospect strategy or business priorities related to sales intelligence or AI research beyond the DARPA quantum initiative."
+              ],
+              "suggested_questions": []
+            },
+            "competitor": {
+              "agent": "competitor",
+              "findings": [],
+              "gaps": [
+                "No retrieved competitor source or explicit prospect-source competitor mention was available."
+              ],
+              "suggested_questions": []
+            },
+            "leadership": {
+              "agent": "leadership",
+              "findings": [
+                {
+                  "claim": "Arvind Krishna is Chairman, President and Chief Executive Officer of IBM",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S3",
+                      "excerpt": "Arvind Krishna Chairman, President and Chief Executive Officer, IBM"
+                    }
+                  ],
+                  "relevance": "Potentially relevant to a Chief Revenue Officer seeking executive-level contacts for strategic partnership discussions"
+                }
+              ],
+              "gaps": [
+                ""
+              ],
+              "suggested_questions": []
+            }
+          },
+          "api_latency_seconds": 1.402816,
+          "wall_time_seconds": 20.645051,
+          "usage": {
+            "prompt_tokens": 3064,
+            "completion_tokens": 345,
+            "total_tokens": 3409
+          },
+          "mechanical": {
+            "schema_compliant": true,
+            "finding_count": 2,
+            "citation_reference_count": 2,
+            "valid_citation_reference_count": 2,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 2,
+            "categories_with_explicit_gaps": 3,
+            "category_response_rate": 1.0,
+            "evidence_excerpt_count": 2,
+            "valid_evidence_excerpt_count": 2,
+            "evidence_excerpt_validity_rate": 1.0,
+            "findings_missing_evidence": 0,
+            "suggested_question_count": 0
+          },
+          "errors": [],
+          "rate_limit_events": []
+        },
+        {
+          "approach": "grounded_sales",
+          "attempt": 2,
+          "prompt_version": "grounded-sales-v1.1",
+          "prompt_sha256": "b8a5dee486bb9bab567eb3370e7f30eca9086f2a66eb8bd0517c78ac9822cf28",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1200,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [
+            "S2",
+            "S1",
+            "S3"
+          ],
+          "raw_model_outputs": [
+            {
+              "verified_facts": [
+                {
+                  "fact_id": "F1",
+                  "claim": "IBM has been selected for Stage C of DARPA's Quantum Benchmarking Initiative.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "IBM has been selected for Stage C, the third phase of DARPA's rigorous evaluation of approaches to building a fault-tolerant quantum computer"
+                    }
+                  ]
+                }
+              ],
+              "possible_sales_relevance": [
+                {
+                  "fact_id": "F1",
+                  "suggestion": "This milestone indicates IBM’s focus on advanced technology and long-term innovation, which could align with prospects seeking cutting‑edge solutions for complex data challenges."
+                }
+              ],
+              "suggested_discovery_questions": [
+                "What are your organization’s priorities for adopting emerging technologies such as quantum computing or advanced AI?",
+                "How do you currently evaluate the impact of new technology initiatives on revenue generation?",
+                "Can you share any upcoming projects where advanced data or AI capabilities could play a critical role?"
+              ],
+              "missing_evidence": [
+                "Information on the prospect’s current sales strategy or technology adoption roadmap."
+              ]
+            },
+            {
+              "verified_facts": [
+                {
+                  "fact_id": "F1",
+                  "claim": "Arvind Krishna is Chairman, President and Chief Executive Officer of IBM",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S3",
+                      "excerpt": "Arvind Krishna\nChairman, President and Chief Executive Officer, IBM"
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F2",
+                  "claim": "Jay M. Gambetta is Director of IBM Research and IBM Fellow",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "Jay Gambetta, Director of IBM Research and IBM Fellow"
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F3",
+                  "claim": "IBM has been selected for Stage C of DARPA's Quantum Benchmarking Initiative",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative"
+                    }
+                  ]
+                },
+                {
+                  "fact_id": "F4",
+                  "claim": "IBM’s product portfolio includes IBM watsonx Orchestrate and IBM Confluent",
+                  "source_ids": [
+                    "S1"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S1",
+                      "excerpt": "Manage AI agents with IBM watsonx Orchestrate®"
+                    }
+                  ]
+                }
+              ],
+              "possible_sales_relevance": [
+                {
+                  "fact_id": "F1",
+                  "suggestion": "Highlight IBM’s leadership stability when discussing enterprise solutions."
+                },
+                {
+                  "fact_id": "F2",
+                  "suggestion": "Leverage the expertise of IBM Research in quantum computing to position advanced analytics."
+                },
+                {
+                  "fact_id": "F3",
+                  "suggestion": "Use IBM’s DARPA partnership as evidence of cutting‑edge technology readiness."
+                },
+                {
+                  "fact_id": "F4",
+                  "suggestion": "Mention IBM’s AI orchestration and data streaming capabilities as complementary to sales intelligence."
+                }
+              ],
+              "suggested_discovery_questions": [
+                "What challenges do you face when preparing account research for your sales teams?",
+                "How do you currently integrate AI tools into your sales workflow?",
+                "What metrics do you track to measure the efficiency of your sales research process?"
+              ],
+              "missing_evidence": [
+                "Details on the specific features of the Sales Intelligence Platform",
+                "Information on pricing or licensing models for the platform",
+                "Case studies or success stories from similar organizations",
+                "Competitive differentiation points against Oracle’s offerings",
+                "User experience or interface screenshots of the platform"
+              ]
+            }
+          ],
+          "output": {
+            "company": {
+              "agent": "company",
+              "findings": [],
+              "gaps": [
+                "Information on the prospect’s current sales strategy or technology adoption roadmap.",
+                "1 fact(s) omitted because a citation or exact supporting excerpt could not be validated."
+              ],
+              "suggested_questions": [
+                "What are your organization’s priorities for adopting emerging technologies such as quantum computing or advanced AI?",
+                "How do you currently evaluate the impact of new technology initiatives on revenue generation?",
+                "Can you share any upcoming projects where advanced data or AI capabilities could play a critical role?"
+              ]
+            },
+            "competitor": {
+              "agent": "competitor",
+              "findings": [],
+              "gaps": [
+                "No retrieved competitor source or explicit prospect-source competitor mention was available."
+              ],
+              "suggested_questions": []
+            },
+            "leadership": {
+              "agent": "leadership",
+              "findings": [
+                {
+                  "claim": "Arvind Krishna is Chairman, President and Chief Executive Officer of IBM",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S3",
+                      "excerpt": "Arvind Krishna\nChairman, President and Chief Executive Officer, IBM"
+                    }
+                  ],
+                  "relevance": "Highlight IBM’s leadership stability when discussing enterprise solutions."
+                },
+                {
+                  "claim": "Jay M. Gambetta is Director of IBM Research and IBM Fellow",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "Jay Gambetta, Director of IBM Research and IBM Fellow"
+                    }
+                  ],
+                  "relevance": "Leverage the expertise of IBM Research in quantum computing to position advanced analytics."
+                },
+                {
+                  "claim": "IBM has been selected for Stage C of DARPA's Quantum Benchmarking Initiative",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S2",
+                      "excerpt": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative"
+                    }
+                  ],
+                  "relevance": "Use IBM’s DARPA partnership as evidence of cutting‑edge technology readiness."
+                },
+                {
+                  "claim": "IBM’s product portfolio includes IBM watsonx Orchestrate and IBM Confluent",
+                  "source_ids": [
+                    "S1"
+                  ],
+                  "evidence": [
+                    {
+                      "source_id": "S1",
+                      "excerpt": "Manage AI agents with IBM watsonx Orchestrate®"
+                    }
+                  ],
+                  "relevance": "Mention IBM’s AI orchestration and data streaming capabilities as complementary to sales intelligence."
+                }
+              ],
+              "gaps": [
+                "Details on the specific features of the Sales Intelligence Platform",
+                "Information on pricing or licensing models for the platform",
+                "Case studies or success stories from similar organizations",
+                "Competitive differentiation points against Oracle’s offerings",
+                "User experience or interface screenshots of the platform"
+              ],
+              "suggested_questions": [
+                "What challenges do you face when preparing account research for your sales teams?",
+                "How do you currently integrate AI tools into your sales workflow?",
+                "What metrics do you track to measure the efficiency of your sales research process?"
+              ]
+            }
+          },
+          "api_latency_seconds": 1.535585,
+          "wall_time_seconds": 40.279368,
+          "usage": {
+            "prompt_tokens": 3002,
+            "completion_tokens": 804,
+            "total_tokens": 3806
+          },
+          "mechanical": {
+            "schema_compliant": true,
+            "finding_count": 4,
+            "citation_reference_count": 4,
+            "valid_citation_reference_count": 4,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 1,
+            "categories_with_explicit_gaps": 3,
+            "category_response_rate": 1.0,
+            "evidence_excerpt_count": 4,
+            "valid_evidence_excerpt_count": 4,
+            "evidence_excerpt_validity_rate": 1.0,
+            "findings_missing_evidence": 0,
+            "suggested_question_count": 6
+          },
+          "errors": [],
+          "rate_limit_events": []
+        }
+      ]
+    },
+    {
+      "case_id": "oracle_blocked_prospect",
+      "description": "Oracle prospect case intended to measure behavior when public retrieval is blocked or incomplete.",
+      "source_snapshot_sha256": "61974c2a18556d3d90163d98a1aed5a6082242b5c5b176f1b342a617eb45c808",
+      "request": {
+        "product_name": "Sales Intelligence Platform",
+        "company_url": "https://www.oracle.com",
+        "product_category": "AI Sales Research",
+        "competitor_urls": [],
+        "value_proposition": "Source-grounded account research that reduces manual preparation time.",
+        "target_customer": "Chief Revenue Officer"
+      },
+      "source_ids": [],
+      "retrieval_warnings": [
+        "Could not retrieve https://www.oracle.com: 403 Client Error: Forbidden for url: https://www.oracle.com/"
+      ],
+      "approaches": [
+        {
+          "approach": "specialized_v3",
+          "attempt": 1,
+          "prompt_version": "specialized-v3.0",
+          "prompt_sha256": "75822f753ce2d200d80b65255fed0c3e6b50b0e1116aeb06f74aef4ef7432820",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1200,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [],
+          "raw_model_outputs": [],
+          "output": {
+            "company": {
+              "agent": "company",
+              "findings": [],
+              "gaps": [
+                "No prospect sources were retrieved."
+              ],
+              "suggested_questions": []
+            },
+            "competitor": {
+              "agent": "competitor",
+              "findings": [],
+              "gaps": [
+                "No website sources were retrieved."
+              ],
+              "suggested_questions": []
+            },
+            "leadership": {
+              "agent": "leadership",
+              "findings": [],
+              "gaps": [
+                "No prospect sources were retrieved."
+              ],
+              "suggested_questions": []
+            }
+          },
+          "api_latency_seconds": 0.0,
+          "wall_time_seconds": 0.000028,
+          "usage": {},
+          "mechanical": {
+            "schema_compliant": true,
+            "finding_count": 0,
+            "citation_reference_count": 0,
+            "valid_citation_reference_count": 0,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 0,
+            "categories_with_explicit_gaps": 3,
+            "category_response_rate": 1.0,
+            "evidence_excerpt_count": 0,
+            "valid_evidence_excerpt_count": 0,
+            "evidence_excerpt_validity_rate": 1.0,
+            "findings_missing_evidence": 0,
+            "suggested_question_count": 0
+          },
+          "errors": [],
+          "rate_limit_events": []
+        },
+        {
+          "approach": "grounded_sales",
+          "attempt": 1,
+          "prompt_version": "grounded-sales-v1.0",
+          "prompt_sha256": "9065547eb4c8fedf6eb5bd48bd8cac94cb7eb6a15c174d876ae0e5022e9bf476",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1200,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [],
+          "raw_model_outputs": [],
+          "output": {
+            "company": {
+              "agent": "company",
+              "findings": [],
+              "gaps": [
+                "No prospect sources were retrieved."
+              ],
+              "suggested_questions": []
+            },
+            "competitor": {
+              "agent": "competitor",
+              "findings": [],
+              "gaps": [
+                "No website sources were retrieved."
+              ],
+              "suggested_questions": []
+            },
+            "leadership": {
+              "agent": "leadership",
+              "findings": [],
+              "gaps": [
+                "No prospect sources were retrieved."
+              ],
+              "suggested_questions": []
+            }
+          },
+          "api_latency_seconds": 0.0,
+          "wall_time_seconds": 0.00004,
+          "usage": {},
+          "mechanical": {
+            "schema_compliant": true,
+            "finding_count": 0,
+            "citation_reference_count": 0,
+            "valid_citation_reference_count": 0,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 0,
+            "categories_with_explicit_gaps": 3,
+            "category_response_rate": 1.0,
+            "evidence_excerpt_count": 0,
+            "valid_evidence_excerpt_count": 0,
+            "evidence_excerpt_validity_rate": 1.0,
+            "findings_missing_evidence": 0,
+            "suggested_question_count": 0
+          },
+          "errors": [],
+          "rate_limit_events": []
+        }
+      ]
+    }
+  ]
+}

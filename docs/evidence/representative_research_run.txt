@@ -1,0 +1,130 @@
+Skip to main content
+Deploy
+SalesIntel AI
+
+Source-grounded, lightweight multi-agent sales research prototype
+
+Product Name
+
+Prospective Company URL
+
+Product Category
+
+Competitor URLs (optional, one per line)
+
+Target Customer
+
+Value Proposition
+
+Optional product overview (PDF or TXT)
+
+demo_pr...erview.txt
+307.0B
+add icon
+add
+
+Suggest Category
+
+Research Account
+
+Product document parsed: demo_product_overview.txt (306 text characters).
+
+Retrieved evidence
+
+Retrieved 8 public source(s).
+
+keyboard_arrow_right
+
+[Prospect] S1: IBM (HTML)
+
+keyboard_arrow_right
+
+[Prospect] S2: IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative (HTML)
+
+keyboard_arrow_right
+
+[Prospect] S3: IBM Newsroom - Leadership (HTML)
+
+keyboard_arrow_right
+
+[Prospect] S4: IBM - Announcements (HTML)
+
+keyboard_arrow_right
+
+[Competitor] S5: Salesforce: The #1 AI CRM (HTML)
+
+keyboard_arrow_right
+
+[Competitor] S6: Salesforce Delivers Record Third Quarter Fiscal 2026 Results Driven by Agentforce & Data 360 - Salesforce (HTML)
+
+keyboard_arrow_right
+
+[Competitor] S7: News Explorer - Salesforce (HTML)
+
+keyboard_arrow_right
+
+[Competitor] S8: $1 Billion Investment in Spain to Accelerate AI Leadership - Salesforce (HTML)
+
+Agent research results
+
+Verified findings passed source-ID, provenance, and exact-excerpt checks. Sales relevance is a suggestion, not a verified company fact.
+
+Company research
+
+Verified fact: IBM and Siemens are collaborating on research to advance IBM’s nanostack architecture
+
+Supporting excerpt (S4): “IBM and Siemens Collaborate on Research to Advance Nanostack Architecture”
+
+Possible sales relevance: Opportunity to highlight IBM’s partnership activities in high‑tech research
+
+Source IDs: S4
+
+Include this verified finding in the PDF
+
+Verified fact: IBM and NASA released an open‑source AI model to support lunar exploration
+
+Supporting excerpt (S4): “IBM and NASA Release Open-Source AI Model to Support Lunar Exploration”
+
+Possible sales relevance: Showcase IBM’s involvement in AI for space exploration, relevant to research needs
+
+Source IDs: S4
+
+Include this verified finding in the PDF
+
+Evidence gaps: No explicit mention of IBM’s current sales strategy or revenue targets | No data on IBM’s procurement plans for AI research tools | No evidence of IBM’s internal priorities for sales enablement | No public statements about IBM’s competitive positioning against Salesforce | No details on IBM’s future product roadmap beyond the cited initiatives
+
+Competitor research
+
+Verified fact: Salesforce announced a $1 billion investment in Spain to accelerate AI leadership.
+
+Supporting excerpt (S8): “Salesforce, the #1 AI CRM, today unveiled plans to invest $1 billion in Spain over the next five years, cementing the country’s role as the growth engine for Salesforce’s EMEA South operations.”
+
+Possible sales relevance: Potentially relevant to prospects evaluating AI CRM investment strategies.
+
+Source IDs: S8
+
+Include this verified finding in the PDF
+
+Evidence gaps: No explicit mention of IBM as a competitor or partner in the provided sources.
+
+Leadership research
+
+Verified fact: Arvind Krishna is Chairman, President and Chief Executive Officer of IBM
+
+Supporting excerpt (S3): “Arvind Krishna Chairman, President and Chief Executive Officer, IBM”
+
+Possible sales relevance: Potentially relevant for sales outreach to IBM's top executive
+
+Source IDs: S3
+
+Include this verified finding in the PDF
+
+Meeting Preparation
+
+Suggested questions for an initial conversation; they are not verified facts about the prospect.
+
+A public source states, "IBM and Siemens are collaborating on research to advance IBM’s nanostack architecture" What context should we understand before discussing AI Sales Research?
+How would Chief Revenue Officer evaluate whether Helps sales teams research prospective customers and prepare for meetings with source-backed… is valuable?
+Which current priorities, constraints, and decision criteria should we understand because they were not verified in public sources?
+
+Download one-page sales intelligence PDF

@@ -1,0 +1,15 @@
+CAP 931 final automated verification
+
+Command: uv run pytest -v
+Platform: macOS, Python 3.12.14, pytest 9.1.1
+Collected: 98 tests
+Result: 98 passed in 0.69 seconds
+
+Command: uv run ruff check .
+Result: All checks passed!
+
+Command: uv run python -m compileall -q src
+Result: completed successfully with no errors
+
+This text summary records the actual final command results. The final submission
+still requires a genuine Terminal screenshot showing the pytest summary.

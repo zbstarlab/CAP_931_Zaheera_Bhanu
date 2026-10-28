@@ -1,0 +1,4 @@
+SalesIntel AI helps sales representatives prepare for account conversations by
+collecting public company evidence, separating prospect and competitor sources,
+and producing a concise, cited sales brief. The product emphasizes traceable
+research, explicit evidence gaps, and reduced manual preparation time.

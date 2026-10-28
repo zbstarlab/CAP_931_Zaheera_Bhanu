@@ -1,0 +1,573 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-10-26T04:34:11.141538+00:00",
+  "cases": [
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "description": "Accessible IBM prospect evidence with Oracle supplied as a competitor; Oracle previously returned an access block.",
+      "source_snapshot_sha256": "98fa3de1a63623027a94a3936dd0b235369c2de2b9ce31609dbbc6422053624c",
+      "request": {
+        "product_name": "Sales Intelligence Platform",
+        "company_url": "https://www.ibm.com",
+        "product_category": "AI Sales Research",
+        "competitor_urls": [
+          "https://www.oracle.com"
+        ],
+        "value_proposition": "Source-grounded account research that reduces manual preparation time.",
+        "target_customer": "Chief Revenue Officer"
+      },
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "retrieval_warnings": [
+        "Could not retrieve https://www.oracle.com: 403 Client Error: Forbidden for url: https://www.oracle.com/"
+      ],
+      "approaches": [
+        {
+          "approach": "baseline",
+          "attempt": 1,
+          "prompt_version": "baseline-v1.0",
+          "prompt_sha256": "d67951600df3814ffb045161353875aa7306b5c3ab698f46a131f231f3aa88f6",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1800,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [
+            "S2",
+            "S3",
+            "S1"
+          ],
+          "raw_model_outputs": [
+            {
+              "company": {
+                "findings": [
+                  {
+                    "claim": "IBM has advanced to Stage C of DARPA’s Quantum Benchmarking Initiative, indicating a focus on building a fault‑tolerant quantum computer.",
+                    "source_ids": [
+                      "S2"
+                    ],
+                    "relevance": "Demonstrates IBM’s strategic priority in quantum computing research."
+                  }
+                ],
+                "gaps": [
+                  "No evidence of IBM’s broader sales strategy or revenue priorities beyond quantum computing.",
+                  "No information on IBM’s initiatives targeting Chief Revenue Officers or sales enablement.",
+                  "No data on IBM’s current product portfolio or market positioning relative to sales intelligence.",
+                  "No explicit mention of IBM’s approach to reducing manual preparation time for sales research."
+                ],
+                "competitor": {
+                  "findings": [
+                    {
+                      "claim": "Oracle is listed as a competitor source URL, but no specific competitor capabilities or statements are provided in the supplied content.",
+                      "source_ids": [
+                        "S3"
+                      ],
+                      "relevance": "Identifies Oracle as a potential competitor but lacks supporting evidence of its strategy or offerings."
+                    }
+                  ],
+                  "gaps": [
+                    "No competitor strategy or initiative details for Oracle.",
+                    "No comparison of Oracle’s capabilities to IBM’s quantum or AI offerings.",
+                    "No evidence of Oracle’s leadership statements or titles.",
+                    "No data on Oracle’s sales intelligence or AI research initiatives."
+                  ],
+                  "leadership": {
+                    "findings": [
+                      {
+                        "claim": "Arvind Krishna is the Chairman, President and Chief Executive Officer of IBM.",
+                        "source_ids": [
+                          "S3"
+                        ],
+                        "relevance": "Provides a named executive with a directly stated title."
+                      },
+                      {
+                        "claim": "Jay M. Gambetta is the Director of Research at IBM.",
+                        "source_ids": [
+                          "S3"
+                        ],
+                        "relevance": "Provides a named executive with a directly stated title."
+                      },
+                      {
+                        "claim": "Jonathan H. Adashek is the Senior Vice President and Chief Global Affairs Officer at IBM.",
+                        "source_ids": [
+                          "S3"
+                        ],
+                        "relevance": "Provides a named executive with a directly stated title."
+                      },
+                      {
+                        "claim": "Matt Hicks is the President and Chief Executive Officer of Red Hat, a subsidiary of IBM.",
+                        "source_ids": [
+                          "S3"
+                        ],
+                        "relevance": "Provides a named executive with a directly stated title."
+                      }
+                    ],
+                    "gaps": [
+                      "No evidence of leadership statements about sales strategy or revenue priorities.",
+                      "No information on leadership involvement in AI sales research initiatives.",
+                      "No data on leadership roles related to customer engagement or sales enablement.",
+                      "No statements from leadership regarding the reduction of manual preparation time for sales research."
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "output": {},
+          "api_latency_seconds": 0.962855,
+          "wall_time_seconds": 1.027742,
+          "usage": {
+            "prompt_tokens": 1599,
+            "completion_tokens": 492,
+            "total_tokens": 2091
+          },
+          "mechanical": {
+            "schema_compliant": false,
+            "finding_count": 0,
+            "citation_reference_count": 0,
+            "valid_citation_reference_count": 0,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 0,
+            "categories_with_explicit_gaps": 0,
+            "category_response_rate": 0.0
+          },
+          "errors": [
+            "Baseline prompt produced an invalid response."
+          ],
+          "rate_limit_events": []
+        },
+        {
+          "approach": "specialized",
+          "attempt": 1,
+          "prompt_version": "specialized-v2.1",
+          "prompt_sha256": "6016b038fc01bb597b622a23819580adb921474dcde5c2a73aa3ca163bb33ff3",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1200,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [
+            "S2",
+            "S1",
+            "S3"
+          ],
+          "raw_model_outputs": [
+            {
+              "findings": [],
+              "gaps": [
+                "No source provides explicit prospect strategy, disclosed initiatives, business priorities, or company publications relevant to a Sales Intelligence Platform targeting a Chief Revenue Officer."
+              ]
+            },
+            {
+              "findings": [],
+              "gaps": [
+                "No competitor source provided to compare capabilities.",
+                "No product_document supplied to assess specific features."
+              ]
+            },
+            {
+              "findings": [
+                {
+                  "claim": "Arvind Krishna is Chairman, President and Chief Executive Officer of IBM.",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "relevance": "Leadership title"
+                },
+                {
+                  "claim": "Jay M. Gambetta is Director of IBM Research and IBM Fellow.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "relevance": "Research leadership"
+                }
+              ],
+              "gaps": [
+                "No public statements from the Chief Revenue Officer are provided in the supplied sources."
+              ]
+            }
+          ],
+          "output": {
+            "company": {
+              "agent": "company",
+              "findings": [],
+              "gaps": [
+                "No source provides explicit prospect strategy, disclosed initiatives, business priorities, or company publications relevant to a Sales Intelligence Platform targeting a Chief Revenue Officer."
+              ]
+            },
+            "competitor": {
+              "agent": "competitor",
+              "findings": [],
+              "gaps": [
+                "No competitor source provided to compare capabilities.",
+                "No product_document supplied to assess specific features."
+              ]
+            },
+            "leadership": {
+              "agent": "leadership",
+              "findings": [
+                {
+                  "claim": "Arvind Krishna is Chairman, President and Chief Executive Officer of IBM.",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "relevance": "Leadership title"
+                },
+                {
+                  "claim": "Jay M. Gambetta is Director of IBM Research and IBM Fellow.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "relevance": "Research leadership"
+                }
+              ],
+              "gaps": [
+                "No public statements from the Chief Revenue Officer are provided in the supplied sources."
+              ]
+            }
+          },
+          "api_latency_seconds": 1.590161,
+          "wall_time_seconds": 59.693591,
+          "usage": {
+            "prompt_tokens": 4607,
+            "completion_tokens": 283,
+            "total_tokens": 4890
+          },
+          "mechanical": {
+            "schema_compliant": true,
+            "finding_count": 2,
+            "citation_reference_count": 2,
+            "valid_citation_reference_count": 2,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 1,
+            "categories_with_explicit_gaps": 3,
+            "category_response_rate": 1.0
+          },
+          "errors": [],
+          "rate_limit_events": []
+        },
+        {
+          "approach": "baseline",
+          "attempt": 2,
+          "prompt_version": "baseline-v1.1",
+          "prompt_sha256": "0608aa7428db2e932b826fc2ecf2dcf140e7c41db43e3df5157554099d1cb9fa",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1800,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [
+            "S2",
+            "S3",
+            "S1"
+          ],
+          "raw_model_outputs": [
+            {
+              "company": {
+                "findings": [
+                  {
+                    "claim": "IBM is advancing its quantum computing capabilities, having progressed to Stage C of DARPA’s Quantum Benchmarking Initiative and aiming to deliver a fault‑tolerant system by 2029.",
+                    "source_ids": [
+                      "S2"
+                    ],
+                    "relevance": "Demonstrates IBM’s strategic focus on quantum technology, a high‑impact area for future computing."
+                  },
+                  {
+                    "claim": "IBM promotes AI and data solutions, offering products such as IBM watsonx Orchestrate, IBM Confluent, and IBM Bob for AI agent management, real‑time data streaming, and code optimization.",
+                    "source_ids": [
+                      "S1"
+                    ],
+                    "relevance": "Highlights IBM’s portfolio of AI and data services relevant to revenue‑growth initiatives."
+                  }
+                ],
+                "gaps": [
+                  "No explicit mention of IBM’s broader revenue strategy or market positioning beyond quantum and AI products.",
+                  "No data on IBM’s current market share or competitive differentiation in the AI sales research space."
+                ]
+              },
+              "competitor": {
+                "findings": [],
+                "gaps": [
+                  "No competitor information provided from the Oracle URL; cannot identify Oracle’s strategy or capabilities."
+                ]
+              },
+              "leadership": {
+                "findings": [
+                  {
+                    "claim": "Arvind Krishna is the Chairman, President and Chief Executive Officer of IBM.",
+                    "source_ids": [
+                      "S3"
+                    ],
+                    "relevance": "Key executive responsible for overall corporate strategy."
+                  },
+                  {
+                    "claim": "Jay M. Gambetta is the Director of Research at IBM.",
+                    "source_ids": [
+                      "S3"
+                    ],
+                    "relevance": "Leads IBM’s research initiatives, including quantum computing."
+                  },
+                  {
+                    "claim": "Jonathan H. Adashek serves as Senior Vice President and Chief Global Affairs Officer.",
+                    "source_ids": [
+                      "S3"
+                    ],
+                    "relevance": "Handles global affairs, potentially influencing international market strategy."
+                  },
+                  {
+                    "claim": "Matt Hicks is the President and Chief Executive Officer of Red Hat, a subsidiary of IBM.",
+                    "source_ids": [
+                      "S3"
+                    ],
+                    "relevance": "Represents IBM’s open‑source and cloud strategy through Red Hat. "
+                  }
+                ],
+                "gaps": [
+                  "No statements from leadership about specific sales or revenue priorities for the AI sales research platform.",
+                  "No direct quotes from leadership on the value proposition of IBM’s AI and quantum offerings."
+                ]
+              }
+            }
+          ],
+          "output": {
+            "company": {
+              "agent": "company",
+              "findings": [
+                {
+                  "claim": "IBM is advancing its quantum computing capabilities, having progressed to Stage C of DARPA’s Quantum Benchmarking Initiative and aiming to deliver a fault‑tolerant system by 2029.",
+                  "source_ids": [
+                    "S2"
+                  ],
+                  "relevance": "Demonstrates IBM’s strategic focus on quantum technology, a high‑impact area for future computing."
+                },
+                {
+                  "claim": "IBM promotes AI and data solutions, offering products such as IBM watsonx Orchestrate, IBM Confluent, and IBM Bob for AI agent management, real‑time data streaming, and code optimization.",
+                  "source_ids": [
+                    "S1"
+                  ],
+                  "relevance": "Highlights IBM’s portfolio of AI and data services relevant to revenue‑growth initiatives."
+                }
+              ],
+              "gaps": [
+                "No explicit mention of IBM’s broader revenue strategy or market positioning beyond quantum and AI products.",
+                "No data on IBM’s current market share or competitive differentiation in the AI sales research space."
+              ]
+            },
+            "competitor": {
+              "agent": "competitor",
+              "findings": [],
+              "gaps": [
+                "No competitor information provided from the Oracle URL; cannot identify Oracle’s strategy or capabilities."
+              ]
+            },
+            "leadership": {
+              "agent": "leadership",
+              "findings": [
+                {
+                  "claim": "Arvind Krishna is the Chairman, President and Chief Executive Officer of IBM.",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "relevance": "Key executive responsible for overall corporate strategy."
+                },
+                {
+                  "claim": "Jay M. Gambetta is the Director of Research at IBM.",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "relevance": "Leads IBM’s research initiatives, including quantum computing."
+                },
+                {
+                  "claim": "Jonathan H. Adashek serves as Senior Vice President and Chief Global Affairs Officer.",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "relevance": "Handles global affairs, potentially influencing international market strategy."
+                },
+                {
+                  "claim": "Matt Hicks is the President and Chief Executive Officer of Red Hat, a subsidiary of IBM.",
+                  "source_ids": [
+                    "S3"
+                  ],
+                  "relevance": "Represents IBM’s open‑source and cloud strategy through Red Hat. "
+                }
+              ],
+              "gaps": [
+                "No statements from leadership about specific sales or revenue priorities for the AI sales research platform.",
+                "No direct quotes from leadership on the value proposition of IBM’s AI and quantum offerings."
+              ]
+            }
+          },
+          "api_latency_seconds": 1.189675,
+          "wall_time_seconds": 1.236365,
+          "usage": {
+            "prompt_tokens": 1648,
+            "completion_tokens": 510,
+            "total_tokens": 2158
+          },
+          "mechanical": {
+            "schema_compliant": true,
+            "finding_count": 6,
+            "citation_reference_count": 6,
+            "valid_citation_reference_count": 6,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 2,
+            "categories_with_explicit_gaps": 3,
+            "category_response_rate": 1.0
+          },
+          "errors": [],
+          "rate_limit_events": []
+        }
+      ]
+    },
+    {
+      "case_id": "oracle_blocked_prospect",
+      "description": "Oracle prospect case intended to measure behavior when public retrieval is blocked or incomplete.",
+      "source_snapshot_sha256": "61974c2a18556d3d90163d98a1aed5a6082242b5c5b176f1b342a617eb45c808",
+      "request": {
+        "product_name": "Sales Intelligence Platform",
+        "company_url": "https://www.oracle.com",
+        "product_category": "AI Sales Research",
+        "competitor_urls": [],
+        "value_proposition": "Source-grounded account research that reduces manual preparation time.",
+        "target_customer": "Chief Revenue Officer"
+      },
+      "source_ids": [],
+      "retrieval_warnings": [
+        "Could not retrieve https://www.oracle.com: 403 Client Error: Forbidden for url: https://www.oracle.com/"
+      ],
+      "approaches": [
+        {
+          "approach": "baseline",
+          "attempt": 1,
+          "prompt_version": "baseline-v1.0",
+          "prompt_sha256": "d67951600df3814ffb045161353875aa7306b5c3ab698f46a131f231f3aa88f6",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1800,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [],
+          "raw_model_outputs": [],
+          "output": {
+            "company": {
+              "agent": "company",
+              "findings": [],
+              "gaps": [
+                "No public website sources were retrieved."
+              ]
+            },
+            "competitor": {
+              "agent": "competitor",
+              "findings": [],
+              "gaps": [
+                "No public website sources were retrieved."
+              ]
+            },
+            "leadership": {
+              "agent": "leadership",
+              "findings": [],
+              "gaps": [
+                "No public website sources were retrieved."
+              ]
+            }
+          },
+          "api_latency_seconds": 0.0,
+          "wall_time_seconds": 0.000044,
+          "usage": {},
+          "mechanical": {
+            "schema_compliant": true,
+            "finding_count": 0,
+            "citation_reference_count": 0,
+            "valid_citation_reference_count": 0,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 0,
+            "categories_with_explicit_gaps": 3,
+            "category_response_rate": 1.0
+          },
+          "errors": [],
+          "rate_limit_events": []
+        },
+        {
+          "approach": "specialized",
+          "attempt": 1,
+          "prompt_version": "specialized-v2.1",
+          "prompt_sha256": "6016b038fc01bb597b622a23819580adb921474dcde5c2a73aa3ca163bb33ff3",
+          "model": "openai/gpt-oss-20b",
+          "settings": {
+            "temperature": 0.1,
+            "reasoning_effort": "low",
+            "max_completion_tokens_per_call": 1200,
+            "maximum_source_count": 4,
+            "maximum_characters_per_source": 1600,
+            "paced_interval_seconds": 20.0
+          },
+          "selected_source_ids": [],
+          "raw_model_outputs": [],
+          "output": {
+            "company": {
+              "agent": "company",
+              "findings": [],
+              "gaps": [
+                "No prospect sources were retrieved."
+              ]
+            },
+            "competitor": {
+              "agent": "competitor",
+              "findings": [],
+              "gaps": [
+                "No website sources were retrieved."
+              ]
+            },
+            "leadership": {
+              "agent": "leadership",
+              "findings": [],
+              "gaps": [
+                "No prospect sources were retrieved."
+              ]
+            }
+          },
+          "api_latency_seconds": 0.0,
+          "wall_time_seconds": 0.000024,
+          "usage": {},
+          "mechanical": {
+            "schema_compliant": true,
+            "finding_count": 0,
+            "citation_reference_count": 0,
+            "valid_citation_reference_count": 0,
+            "citation_id_validity_rate": 1.0,
+            "provenance_violation_count": 0,
+            "categories_with_findings": 0,
+            "categories_with_explicit_gaps": 3,
+            "category_response_rate": 1.0
+          },
+          "errors": [],
+          "rate_limit_events": []
+        }
+      ]
+    }
+  ]
+}

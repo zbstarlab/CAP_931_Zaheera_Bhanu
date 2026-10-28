@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-26T04:33:02.985611+00:00",
+  "copyright_note": "Only bounded excerpts actually supplied to the model are stored; full webpages are not archived.",
+  "cases": [
+    {
+      "case_id": "ibm_with_blocked_oracle_competitor",
+      "description": "Accessible IBM prospect evidence with Oracle supplied as a competitor; Oracle previously returned an access block.",
+      "request": {
+        "product_name": "Sales Intelligence Platform",
+        "company_url": "https://www.ibm.com",
+        "product_category": "AI Sales Research",
+        "competitor_urls": [
+          "https://www.oracle.com"
+        ],
+        "value_proposition": "Source-grounded account research that reduces manual preparation time.",
+        "target_customer": "Chief Revenue Officer"
+      },
+      "captured_at": "2026-10-26T04:33:02.851581+00:00",
+      "retrieval_config": {
+        "max_pages_per_site": 3,
+        "max_total_sources": 6,
+        "snapshot_chars_per_source": 1600
+      },
+      "retrieval_warnings": [
+        "Could not retrieve https://www.oracle.com: 403 Client Error: Forbidden for url: https://www.oracle.com/"
+      ],
+      "sources": [
+        {
+          "source_id": "S1",
+          "url": "https://www.ibm.com/us-en",
+          "title": "IBM",
+          "retrieved_at": "2026-10-26T04:33:02.495737+00:00",
+          "source_type": "prospect",
+          "content_type": "html",
+          "publication_date": "2024-12-20",
+          "relevance_score": 1,
+          "content": "The future starts at Current\nConnect with the leaders driving the future of data and AI\nExplore the event\nFuel engagement with insight\nDiscover the faster, smarter, more immersive way fans connect with Scuderia Ferrari HP through live data, intelligent race interpretation and an upgraded digital platform engineered with IBM technology\nSupercharge fan experiences\nGet ready for IBM TechXchange 2026\nRecommended for you\nFree trial\nExperience the full power of IBM Bob™: Get 50 Bobcoins for 30 days\nIBM Developer tools\nExplore self-service developer solutions for AI, integration, observability, infrastructure and more\nWebinar | 4 Nov, 10 AM ET\nFind out how leading CFOs are accelerating execution and creating value from AI investments\nBlog\nLearn how quantum computing demonstrates provable advantages over AI models on specific computational tasks\nTop enterprise technology\nInnovation makes an impact when customers see results. Explore the\nIBM products recognized in the TrustRadius 2026 Top Rated Awards\n, where verified reviews highlight real-world value at scale.\nSave big on top products\nCode faster with IBM Bob™\n\"We achieved 100% refactored code. Everything I thought would be a problem, Bob solved.\"—APIS IT\nManage AI agents with IBM watsonx Orchestrate®\nIBM watsonx Orchestrate powers AI agents that cut HR costs by 40% and resolve 94% of employee requests automatically\nReal-time data streaming with IBM Confluent\n\"Since we built Horus on top of Confluent, we’ve been able to save over a million dollars in what we were paying other vendors for.\"—SecurityScorecard\nOptimize storage for AI",
+          "content_truncated": false,
+          "requested_url": "https://www.ibm.com/",
+          "snapshot_excerpt": true,
+          "original_extracted_characters": 5129,
+          "full_extracted_content_sha256": "ae14f745207709651de105ad530181ffaceb89305f52fbe55a7da0748a8556ab"
+        },
+        {
+          "source_id": "S2",
+          "url": "https://newsroom.ibm.com/2026-10-07-ibm-advances-to-stage-c-of-darpa-quantum-benchmarking-initiative",
+          "title": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative",
+          "retrieved_at": "2026-10-26T04:33:02.652336+00:00",
+          "source_type": "prospect",
+          "content_type": "html",
+          "publication_date": null,
+          "relevance_score": 21,
+          "content": "All press releases\nIBM Advances to Stage C of DARPA Quantum Benchmarking Initiative\nIBM moves to third phase of DARPA's rigorous evaluation of approaches to building a fault-tolerant quantum computer\nOct 7, 2026\nYORKTOWN HEIGHTS, N.Y.\n– IBM (NYSE:\nIBM\n) today announced it has been selected for Stage C, the third phase of the Quantum Benchmarking Initiative (QBI) led by DARPA, the United States Defense Advanced Research Projects Agency. This phase will advance IBM through DARPA's verification process, in which independent experts extensively test and measure quantum hardware, technology, systems engineering, and architectures to determine if a company can build a fault-tolerant quantum computer.\n\"Advancing to the third stage of DARPA's Quantum Benchmarking Initiative validates the strength of IBM's path to building a fault-tolerant quantum computer,\" said\nJay Gambetta, Director of IBM Research and IBM Fellow\n. \"IBM expects to deliver the first fault-tolerant system in 2029, and we plan to scale the value of quantum computing well beyond that timeline. We look forward to working with DARPA’s team of experts as they advance their review of approaches to fault-tolerant quantum computing into the testing phase.”\nAs an independent research and development arm of the U.S. Department of Defense, DARPA launched the QBI in 2024 to determine whether an industrially useful fault-tolerant quantum computer can be built by 2033. The program defines such a system as one whose computational value will exceed its cost. IBM has successfully progressed through the QBI’s assessment process, inc",
+          "content_truncated": false,
+          "snapshot_excerpt": true,
+          "original_extracted_characters": 5054,
+          "full_extracted_content_sha256": "9bfe44ad6170bb1d774d2e49a6b4078632c56376ef4664daf2503958097b8404"
+        },
+        {
+          "source_id": "S3",
+          "url": "https://newsroom.ibm.com/executive-bios",
+          "title": "IBM Newsroom - Leadership",
+          "retrieved_at": "2026-10-26T04:33:02.702446+00:00",
+          "source_type": "prospect",
+          "content_type": "html",
+          "publication_date": null,
+          "relevance_score": 33,
+          "content": "Leadership\nArvind Krishna\nChairman, President and Chief Executive Officer, IBM\nExecutive Biography\nIBM Leadership\nExecutive biographies and media assets\nJonathan H. Adashek\nSenior Vice President and Chief Global Affairs Officer\nMohamad Ali\nSenior Vice President, IBM Consulting\nAna Paula Assis\nSenior Vice President, EMEA and Growth Markets\nBarry Baker\nSenior Vice President, Infrastructure\nAndy Baldwin\nSenior Vice President, Consulting Offerings and Growth\nGary Cohn\nVice Chairman\nNeil Dhar\nSenior Vice President, Americas Consulting\nDr. Jay M. Gambetta\nDirector, Research\nMatt Hicks\nPresident and Chief Executive Officer of Red Hat\nJames J. Kavanaugh\nChief Financial Officer and Senior Vice President of Finance & Operations\nNickle LaMoreaux\nSenior Vice President and Chief Human Resources Officer\nRic Lewis\nSenior Vice President, IBM\nDinesh Nirmal\nSenior Vice President, Software\nAnne E. Robinson\nSenior Vice President and Chief Legal Officer\nAlexander F. Stern\nSenior Vice President, Strategy and M&A\nRob Thomas\nSenior Vice President, Software and Chief Commercial Officer\nJoanne Wright\nSenior Vice President, Transformation and Operations\nKareem Yusuf Ph.D\nSenior Vice President, Ecosystem, Strategic Partners & Initiatives",
+          "content_truncated": false,
+          "snapshot_excerpt": true,
+          "original_extracted_characters": 1229,
+          "full_extracted_content_sha256": "0a8abb1ce5c599ed082789d3b6ff337b68e389813b5190e47ef0e29e9e74bac2"
+        }
+      ],
+      "source_snapshot_sha256": "98fa3de1a63623027a94a3936dd0b235369c2de2b9ce31609dbbc6422053624c"
+    },
+    {
+      "case_id": "oracle_blocked_prospect",
+      "description": "Oracle prospect case intended to measure behavior when public retrieval is blocked or incomplete.",
+      "request": {
+        "product_name": "Sales Intelligence Platform",
+        "company_url": "https://www.oracle.com",
+        "product_category": "AI Sales Research",
+        "competitor_urls": [],
+        "value_proposition": "Source-grounded account research that reduces manual preparation time.",
+        "target_customer": "Chief Revenue Officer"
+      },
+      "captured_at": "2026-10-26T04:33:02.985449+00:00",
+      "retrieval_config": {
+        "max_pages_per_site": 3,
+        "max_total_sources": 6,
+        "snapshot_chars_per_source": 1600
+      },
+      "retrieval_warnings": [
+        "Could not retrieve https://www.oracle.com: 403 Client Error: Forbidden for url: https://www.oracle.com/"
+      ],
+      "sources": [],
+      "source_snapshot_sha256": "61974c2a18556d3d90163d98a1aed5a6082242b5c5b176f1b342a617eb45c808"
+    }
+  ]
+}
